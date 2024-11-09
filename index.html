@@ -391,5 +391,53 @@
     </div>
     </div>
     </footer>
+  <div class="backdrop">
+   <div class="modal">
+    <button type="button" class="modal-close"></button>
+    <p class="overlay-text">Leave your contacts and we will call you back</p>
+    <form class="form">
+     
+    <div class="modal-field">   
+     <label class="name-of-line" for="user-name">Name</label>
+    </div>
+    <div class="input-wraper">
+       <input type="text" 
+       name="user-name"
+       class="modal-input"
+       id="user-name"/>
+    <svg class="modal-icon" width="18px" heigth="18px">
+        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+    </svg>
+    </div>
+
+    <div class="modal-field">
+    <label class="name-of-line" for="user-tel">Phone</label>
+       <input type="tel" 
+       name="user-tel"
+       class="modal-input"
+       id="user-tel"/>
+    </div>
+
+    <div class="modal-field">
+    <label class="name-of-line" for="user-email">Email</label>
+       <input type="email" 
+       name="user-email"
+       class="modal-input"
+       id="user-email"/>
+    </div>
+    
+    <div class="modal-field">
+    <label class="name-of-line" for="user-comment">Comment</label>
+     <input type="text" 
+       name="user-comment"
+       class="modal-input"
+       id="user-comment"
+       placeholder="Text input"/>
+    </div>
+
+    <button type="submit">Send</button>
+    </form>
+</div>
+  </div>  
 </body>
 </html>
