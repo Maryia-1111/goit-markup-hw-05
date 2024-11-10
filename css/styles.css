@@ -590,7 +590,7 @@ img {
     margin-bottom: 4px;
 }
 .modal-field {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 .modal-icon {
     fill: #4d5ae5;
@@ -619,7 +619,9 @@ img {
     outline: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    background-color: #4D5AE5;
+}
+.modal-textarea:focus {
+    border-color: #4d5ae5;
 }
 .push-send {
     margin: 0 auto;
