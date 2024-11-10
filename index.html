@@ -391,17 +391,17 @@
     </div>
     </div>
     </footer>
+
   <div class="backdrop">
    <div class="modal">
     <button type="button" class="modal-close">
-        <svg class="modal-close-icon" width="8px" heigth="8px">
-          <use href=""></use>
+        <svg class="modal-close-icon" width="8" heigth="8">
+          <use href="./images/icons.svg#icon-cross"></use>
         </svg>
     </button>
     <p class="overlay-text">Leave your contacts and we will call you back</p>
    
-    <div class="form">
-     
+    <form class="form">
     <div class="modal-field">   
      <label class="name-of-line" for="user-name">Name</label>
     </div>
@@ -410,31 +410,42 @@
        name="user-name"
        class="modal-input"
        id="user-name"/>
-    <svg class="modal-icon" width="18px" heigth="24px">
-        <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-    </svg>
-    </div>
+       <svg class="modal-icon" width="18px" heigth="24px">
+       <use href="./images/icons.svg#icon-person"></use>
+       </svg>
     </div>
 
     <div class="modal-field">
     <label class="name-of-line" for="user-tel">Phone</label>
+    </div>
+    <div class="input-wraper">
        <input type="tel" 
        name="user-tel"
        class="modal-input"
        id="user-tel"/>
+       <svg class="modal-icon" width="18px" heigth="24px">
+       <use href="./images/icons.svg#icon-tel"></use>
+       </svg>
     </div>
 
     <div class="modal-field">
     <label class="name-of-line" for="user-email">Email</label>
+    </div>   
+    <div class="input-wraper">
        <input type="email" 
        name="user-email"
        class="modal-input"
        id="user-email"/>
+       <svg class="modal-icon" width="18px" heigth="24px">
+       <use href="./images/icons.svg#icon-letter"></use>
+       </svg>
     </div>
     
     <div class="modal-field-big">
     <label class="name-of-line" for="user-comment">Comment</label>
-       <input type="textarea" 
+    </div>
+    <div class="input-wraper">
+    <input type="textarea" 
        name="user-comment"
        class="modal-input"
        id="user-comment"
@@ -443,7 +454,7 @@
 
     <button type="submit">Send</button>
     </form>
-</div>
+  </div>
   </div>  
 </body>
 </html>
