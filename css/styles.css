@@ -629,14 +629,14 @@ img {
 }
 .push-send {
     margin: 0 auto;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4d5ae5;
@@ -646,7 +646,9 @@ img {
         line-height: 1.5;
         letter-spacing: 0.04em;
         text-align: center;
-        color: #fff; 
+        color: #fff;
+        border: none;
+        cursor: pointer;
 }
 .modal-field-check {
     margin-bottom: 24px;
@@ -672,9 +674,6 @@ img {
     background-color: #404bbf;
     fill: #f4f4fd;
 }
-.privacy-line {
-    display: inline-flex;
-}
 .privacy-link {
     color: #4D5AE5;
 }
@@ -684,7 +683,6 @@ img {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -692,7 +690,5 @@ img {
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: #4d5ae5;
-}
-.icon-agree {
-    background-color: green;
+    display: inline-flex;
 }
