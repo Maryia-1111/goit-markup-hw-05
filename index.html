@@ -390,13 +390,29 @@
         </ul>
     </div>
     </div>
+    <div class="sbscr">
+        <p class="sbscr-text">Subcribe</p>
+        <form class="sbscr-form">
+            <label class="sbscr-window">
+                <input name="email"
+                type="email"
+                placeholder="E-mail"
+                class="sbscr-email" />
+            </label>
+            <button type="submit" class="sbscr-button">Subscribe
+                <svg class="icon-sbscr" width="24" height="24">
+                    <use href="./images/icons.svg#icon-frame-3"></use>
+                </svg>
+            </button>
+        </form>
+    </div>
     </footer>
 
   <div class="backdrop">
    <div class="modal">
     <button type="button" class="modal-close">
-        <svg class="modal-close-icon" width="8" heigth="8">
-          <use href="./images/icons.svg#icon-cross"></use>
+        <svg class="modal-close-icon" width="8" height="8">
+        <use href="./images/icons.svg#icon-cross"></use>
         </svg>
     </button>
     <p class="overlay-text">Leave your contacts and we will call you back</p>
@@ -422,7 +438,9 @@
        <input type="tel" 
        name="user-tel"
        class="modal-input"
-       id="user-tel"/>
+       id="user-tel"
+       required
+       value="+380"/>
        <svg class="modal-icon" width="18px" heigth="24px">
        <use href="./images/icons.svg#icon-tel"></use>
        </svg>
@@ -441,20 +459,38 @@
        </svg>
     </div>
     
-    <div class="modal-field-big">
+    <div class="modal-field">
     <label class="name-of-line" for="user-comment">Comment</label>
     </div>
-    <div class="input-wraper">
-    <input type="textarea" 
-       name="user-comment"
-       class="modal-input"
+    <textarea name="user-comment"
+       class="modal-textarea"
        id="user-comment"
-       placeholder="Text input"/>
-    </div>
+       placeholder="Enter text"></textarea>
 
-    <button type="submit">Send</button>
+    <div class="modal-field-check">
+        <input type="checkbox"
+        name="user-privacy"
+        id="user-privacy"
+        class="modal-check visually-hidden"
+        value="true" />
+        <label for="user-privacy"
+        class="modal-check-text">
+        I accept the terms and conditions of the
+        <span class="privacy-line">
+        Privacy Policy
+        <svg class="icon-agree" width="10" height="8">
+            <use href="./images/icons.svg#icon-agree"></use>
+        </svg>   
+        </span> 
+        </label>
+    </div>    
+    <button class="push-send" type="submit">Send</button>
     </form>
   </div>
-  </div>  
+  </div>
+  <script>
+    const input = document.querySelector("#user-tel")
+    console.log(input)
+  </script>
 </body>
 </html>
